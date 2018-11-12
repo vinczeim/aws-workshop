@@ -49,7 +49,11 @@
 * Set password policy
 
 ## Create billing alert
-...
+* Do as root
+* My Billing Dashboard / scroll down to Alerts & Notifications / Enable Now
+  * Check Receive Billing Alerts
+  * Save preferences
+  * Click Manage Billing Alerts -> CloudWatch / Billing / Create Alarm / set amount and e-mail address / Confirm e-mail address
 
 ## CodeStar: create new project (Java web app running on EC2)
 ...
