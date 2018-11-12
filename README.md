@@ -37,7 +37,16 @@
 
 ## IAM: create users and groups with policies
 * IAM = Identity & Access Management: Users, Groups, Roles and Policies
-* 
+* IAM is Global
+* Root account: logs in with sign-up e-mail address
+* Initial steps:
+  * Customize users sign-in link
+  * Activate MFA on root account
+  * Create users: imre, john -> Create group: system-admins with policy AdministratorAccess -> Download access key .csv
+  * User + password: to access AWS Console (via browser)
+  * Access key ID + Secret access key: to access AWS programmatically (e.g. AWS CLI or Eclipse plugin)
+  * Check user's Security Credentials to manage access
+* Set password policy
 
 ## Create billing alert
 ...
