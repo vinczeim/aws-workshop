@@ -1,4 +1,6 @@
-# INTRO - Flovtec
+# INTRO
+
+## Flovtec
 * https://www.flovtec.com
 * Vision: asset manager company providing liquidity for digital assets
 * Step 1: 
@@ -10,35 +12,52 @@
 * Team: asset managers + quantitative researchers + developers
 * HIRING !!!
 
-# Create a new AWS account
+## Infra
+* Startup with NO infrastructure -> building everything from scratch
+* Setting up infra in Amazon cloud
+* Trying to keep it protected by AWS access control (regulators "like it")
+* Usual first requirements: dev workspaces, code repo, database, automated CI/CD, segregation of DEV/UAT/PROD execution environments
 
+## Plan for today
+* Create account with billing alarm, create users/groups, create CI/CD pipeline for a Java web application
+* Show current Flovtec setup
+
+
+# AWS - CodeStar / CodePipeline setup
+
+## Create a new AWS account
 * AWS Console: https://aws.amazon.com
 * Account creation guide: https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account
-* Account: flovtrain
+* My account: flovtrain
 * Only one account is allowed per e-mail address: created aliases (aws1@flovtec.com *, aws2@flovtec.com, aws3@flovtec.com)
 
-# IAM: create users and groups with policies
+## Regions and available services
+* Regions and availability zones (data centers)
+* Region table: https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/
+
+## IAM: create users and groups with policies
+* IAM = Identity & Access Management: Users, Groups, Roles and Policies
+* 
+
+## Create billing alert
 ...
 
-# Create billing alert
+## CodeStar: create new project (Java web app running on EC2)
 ...
 
-# Regions and available services
+## CodeCommit
 ...
 
-# CodeStar: create new project (Java web app running on EC2)
+## EC2: check deployment
 ...
 
-# CodeCommit
+## Cloud9: modify the code and commit
 ...
 
-# EC2: check deployment
+## CodePipeline: check automated deployment process and the result
 ...
 
-# Cloud9: modify the code and commit
-...
+## Pipeline actions: check build and deploy steps with .yml files (buildspec.yml, template.yml, appspec.yml)
 
-# CodePipeline: check automated deployment process and the result
+# AWS - Flovtec setup
 ...
-
-# Pipeline actions: check build and deploy steps with .yml files (buildspec.yml, template.yml, appspec.yml)
