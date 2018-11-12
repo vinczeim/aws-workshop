@@ -10,7 +10,7 @@
   * assets: any kind of digital assets, anything that got tokenized
   * market making: not on exchanges but decentralized, peer-to-peer
 * Team: asset managers + quantitative researchers + developers
-* HIRING !!!
+* We are HIRING !!!
 
 ## Infra
 * Startup with NO infrastructure -> building everything from scratch
