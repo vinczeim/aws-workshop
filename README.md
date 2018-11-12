@@ -1,9 +1,21 @@
+# INTRO - Flovtec
+* https://www.flovtec.com
+* Vision: asset manager company providing liquidity for digital assets
+* Step 1: 
+** assets: crytpo-currencies
+** market making: on crypto exchanges
+* Long term:
+** assets: any kind of digital assets, anything that got tokenized
+** market making: not on exchanges but decentralized, peer-to-peer
+* Team: asset managers + quantitative researchers + developers
+* HIRING !!!
+
 # Create a new AWS account
 
 * AWS Console: https://aws.amazon.com
 * Account creation guide: https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account
 * Account: flovtrain
-* Only one account is allowed per e-mail address: created aliases (aws1@flovtec.com, aws2@flovtec.com, aws3@flovtec.com)
+* Only one account is allowed per e-mail address: created aliases (aws1@flovtec.com *, aws2@flovtec.com, aws3@flovtec.com)
 
 # IAM: create users and groups with policies
 ...
