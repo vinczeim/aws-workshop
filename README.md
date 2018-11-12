@@ -43,10 +43,12 @@
   * Customize users sign-in link
   * Activate MFA on root account
   * Create users: imre, john -> Create group: system-admins with policy AdministratorAccess -> Download access key .csv
+  * Set password policy
+Access methods and credentials:
   * User + password: to access AWS Console (via browser)
   * Access key ID + Secret access key: to access AWS programmatically (e.g. AWS CLI or Eclipse plugin)
-  * Check user's Security Credentials to manage access
-* Set password policy
+  * Git credentials: to access CodeCommit repo by Git client
+  * Check user's Security Credentials to manage
 
 ## Create billing alert
 * Do as root
