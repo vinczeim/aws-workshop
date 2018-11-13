@@ -60,7 +60,8 @@
 ## CodeStar: create new project (Java web app running on EC2)
 * Log on with the admin user that we just created
 * Select region: Ireland (to be able to use Cloud9)
-* CodeStar / Start a project: choose template "Java Spring web application" (Filters: web app, Java, EC2)
+* CodeStar / Start a project:
+  * Choose template "Java Spring web application" (Filters: web app, Java, EC2)
   * EC2 configuration: leave on default (t2.micro instance with default VPC)
   * Add permission to administer AWS resources on your behalf
   * Choose an Amazon EC2 Key Pair (needed to SSH to EC2) -> Create new (in EC2 service / Key Pairs) then save private key
@@ -74,17 +75,17 @@
 * Features: clone URL, history, compare, branches, tags, pull requests
 
 ## CodeBuild
-* Open up, check build history
+* Open and check build history
 * Download/view the build artifact
 * Uses buildspec.yml
 
 ## CodeDeploy
-* Open up, check deployment history
+* Open and check deployment history
 * Check deployment groups and revisions (stored in S3 bucket)
 * Uses appspec.yml
 
 ## CodePipeline
-* Wiring the steps
+* It wires the previous steps together
 * Ability to release change or retry failed step (only if the pipeline itself didn't change)
 * Press Edit and then Edit for each stage and each action to review settings
 
@@ -96,18 +97,31 @@
 * What does it add on top of CodePipeline?
   * Users for this dev workflow, with ability to use or even edit the pipeline
   * Central dashboard
-* Check Project Resources to see how many things are wired together
+* Check Project Resources to see how many things are created in the background
+
+## Basic building blocks: EC2 and S3
+* S3: storage space
+* EC2: virtual box
 
 ## EC2: check deployment
-...
+* Open EC2 service and check our instances: one was created for the web app and another for Cloud9
+* SSH to the web app box and check deployment (private key .pem file is needed)
+* Get pulic IP from EC2 service and view the web app in a browser
 
 ## Cloud9: modify the code and commit
-...
+* Start Cloud9 and let it check out our code
+* Set a dark theme to be cool !!!
+* Set Git commit info:
+  * git config --global user.name YOUR_USER_NAME
+  * git config --global user.email YOUR_EMAIL_ADDRESS
+* Change the file /mycloud9webapp/src/main/webapp/WEB-INF/views/index.jsp and commit the change
+  * cd mycloud9webapp
+  * git commit -a
+  * git push
 
 ## CodePipeline: check automated deployment process and the result
-...
-
-## Pipeline actions: check build and deploy steps with .yml files (buildspec.yml, template.yml, appspec.yml)
+* Check the result in CodeCommit and see CodePipeline building
+* Check how the web site changed
 
 
 # AWS - Flovtec setup
