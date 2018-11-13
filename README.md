@@ -73,9 +73,30 @@
 * Check the project files and their descriptions in README.md
 * Features: clone URL, history, compare, branches, tags, pull requests
 
-# CodeBuild
+## CodeBuild
 * Open up, check build history
+* Download/view the build artifact
+* Uses buildspec.yml
 
+## CodeDeploy
+* Open up, check deployment history
+* Check deployment groups and revisions (stored in S3 bucket)
+* Uses appspec.yml
+
+## CodePipeline
+* Wiring the steps
+* Ability to release change or retry failed step (only if the pipeline itself didn't change)
+* Press Edit and then Edit for each stage and each action to review settings
+
+## CloudFormation
+* Infrastructure as Code (IaC)
+* Used template.yml
+
+## CodeStar again
+* What does it add on top of CodePipeline?
+  * Users for this dev workflow, with ability to use or even edit the pipeline
+  * Central dashboard
+* Check Project Resources to see how many things are wired together
 
 ## EC2: check deployment
 ...
