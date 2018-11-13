@@ -58,10 +58,24 @@
   * Click Manage Billing Alerts -> CloudWatch / Billing / Create Alarm / set amount and e-mail address / Confirm e-mail address
 
 ## CodeStar: create new project (Java web app running on EC2)
-...
+* Log on with the admin user that we just created
+* Select region: Ireland (to be able to use Cloud9)
+* CodeStar / Start a project: choose template "Java Spring web application" (Filters: web app, Java, EC2)
+  * EC2 configuration: leave on default (t2.micro instance with default VPC)
+  * Add permission to administer AWS resources on your behalf
+  * Choose an Amazon EC2 Key Pair (needed to SSH to EC2) -> Create new (in EC2 service / Key Pairs) then save private key
+  * Select key pair and press Create
+  * Choose Cloud9 as IDE, leave its settings on default, note that it shuts down in 30 minutes
+* Check the CodeStar project's dashboard, note that the pipeline is already building
 
 ## CodeCommit
-...
+* Open from CodeStar's left side menu, pipeline stage or as individual service
+* Check the project files and their descriptions in README.md
+* Features: clone URL, history, compare, branches, tags, pull requests
+
+# CodeBuild
+* Open up, check build history
+
 
 ## EC2: check deployment
 ...
