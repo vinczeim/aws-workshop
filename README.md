@@ -109,5 +109,14 @@
 
 ## Pipeline actions: check build and deploy steps with .yml files (buildspec.yml, template.yml, appspec.yml)
 
+
 # AWS - Flovtec setup
 ...
+
+
+# References
+* [AWS Docs](https://docs.aws.amazon.com)
+* [AWS Whitepapers](https://aws.amazon.com/whitepapers)
+* [Overview of all AWS services](https://docs.aws.amazon.com/aws-technical-content/latest/aws-overview/introduction.html)
+* [Blue/Green Deployments on AWS](https://d1.awsstatic.com/whitepapers/AWS_Blue_Green_Deployments.pdf)
+* [Continuous Integration and Continuous Delivery on AWS](https://d1.awsstatic.com/whitepapers/DevOps/practicing-continuous-integration-continuous-delivery-on-AWS.pdf)
