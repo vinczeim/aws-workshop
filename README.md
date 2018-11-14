@@ -133,6 +133,7 @@
 * Only DEV is deployed on every commit, UAT and PROD require manual approval
 * DEV/UAT is managed by one admin user and PROD is managed by another admin user
 * Connection between DEV/UAT and PROD will be a shared S3 bucket (staging area) owned by the PROD account
+* DEV and UAT located in Ireland, PROD in N. Virginia (to be close to the exchange)
 * Additional steps for CodeBuild: test execution, static code analysis
 
 ## What else do we use?
