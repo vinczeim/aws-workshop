@@ -31,7 +31,10 @@
 * [AWS Console](https://aws.amazon.com)
 * [Account creation guide](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account)
 * My account: flovtrain
-* Only one account is allowed per e-mail address: created aliases (aws1@flovtec.com *, aws2@flovtec.com, aws3@flovtec.com)
+* Only one account is allowed per e-mail address: created aliases
+  * aws1@flovtec.com: used
+  * aws2@flovtec.com: created clean account
+  * aws3@flovtec.com: not used yet
 
 ## Regions and available services
 * Regions and availability zones (data centers)
