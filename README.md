@@ -2,7 +2,7 @@
 
 [Imre Vincze](https://www.linkedin.com/in/vinnie950) - head of IT @ [flov technologies AG](https://www.linkedin.com/company/flov-technologies) (Flovtec)
 
-## Flovtec
+### Flovtec
 * [www.flovtec.com](https://www.flovtec.com)
 * Vision: asset manager company providing liquidity for digital assets
 * Step 1: 
@@ -14,20 +14,20 @@
 * Team: asset managers + quantitative researchers + developers
 * We are HIRING !!!
 
-## Infra
+### Infra
 * Startup with NO infrastructure -> building everything from scratch
 * Setting up infra in Amazon cloud
 * Trying to keep it protected by AWS access control (regulators "like it")
 * Usual first requirements: dev workspaces, code repo, database, automated CI/CD, segregation of DEV/UAT/PROD execution environments
 
-## Plan for today
+### Plan for today
 * Create account with billing alarm, create users/groups, create CI/CD pipeline for a Java web application
 * Show current Flovtec setup
 
 
 # AWS - CodeStar / CodePipeline setup
 
-## Create a new AWS account
+### Create a new AWS account
 * [AWS Console](https://aws.amazon.com)
 * [Account creation guide](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account)
 * My account: flovtrain
@@ -36,11 +36,11 @@
   * flovtrain2 / aws2@flovtec.com: created account but clean state
   * flovtrain3 / aws3@flovtec.com: not created yet
 
-## Regions and available services
+### Regions and available services
 * Regions and availability zones (data centers)
 * [Region table](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services)
 
-## IAM: create users and groups with policies
+### IAM: create users and groups with policies
 * IAM = Identity & Access Management: Users, Groups, Roles and Policies
 * IAM is Global
 * Root account: logs in with sign-up e-mail address
@@ -55,14 +55,14 @@
   * Git credentials: to access CodeCommit repo by Git client
   * Check user's Security Credentials to manage
 
-## Create billing alert
+### Create billing alert
 * Do as root
 * My Billing Dashboard / scroll down to Alerts & Notifications / Enable Now
   * Check Receive Billing Alerts
   * Save preferences
   * Click Manage Billing Alerts -> CloudWatch / Billing / Create Alarm / set amount and e-mail address / Confirm e-mail address
 
-## CodeStar: create new project (Java web app running on EC2)
+### CodeStar: create new project (Java web app running on EC2)
 * Log on with the admin user that we just created
 * Select region: Ireland (to be able to use Cloud9)
 * CodeStar / Start a project:
@@ -74,46 +74,46 @@
   * Choose Cloud9 as IDE, leave its settings on default, note that it shuts down in 30 minutes
 * Check the CodeStar project's dashboard, note that the pipeline is already building
 
-## CodeCommit
+### CodeCommit
 * Open from CodeStar's left side menu, pipeline stage or as individual service
 * Check the project files and their descriptions in README.md
 * Features: clone URL, history, compare, branches, tags, pull requests
 
-## CodeBuild
+### CodeBuild
 * Open and check build history
 * Download/view the build artifact
 * Uses buildspec.yml
 
-## CodeDeploy
+### CodeDeploy
 * Open and check deployment history
 * Check deployment groups and revisions (stored in S3 bucket)
 * Uses appspec.yml
 
-## CodePipeline
+### CodePipeline
 * It wires the previous steps together
 * Ability to release change or retry failed step (only if the pipeline itself didn't change)
 * Press Edit and then Edit for each stage and each action to review settings
 
-## CloudFormation
+### CloudFormation
 * Infrastructure as Code (IaC)
 * Used template.yml
 
-## CodeStar again
+### CodeStar again
 * What does it add on top of CodePipeline?
   * Users for this dev workflow, with ability to use or even edit the pipeline
   * Central dashboard
 * Check Project Resources to see how many things are created in the background
 
-## Basic building blocks: EC2 and S3
+### Basic building blocks: EC2 and S3
 * S3: storage space
 * EC2: virtual box
 
-## EC2: check deployment
+### EC2: check deployment
 * Open EC2 service and check our instances: one was created for the web app and another for Cloud9
 * SSH to the web app box and check deployment (private key .pem file is needed)
 * Get pulic IP from EC2 service and view the web app in a browser
 
-## Cloud9: modify the code and commit
+### Cloud9: modify the code and commit
 * Start Cloud9 and let it check out our code
 * Set a dark theme to be cool !!!
 * Set Git commit info:
@@ -124,14 +124,14 @@
   * git commit -a
   * git push
 
-## CodePipeline: check automated deployment process and the result
+### CodePipeline: check automated deployment process and the result
 * Check the result in CodeCommit and see CodePipeline building
 * Check how the web site changed
 
 
 # AWS - Flovtec setup
 
-## How is our setup different?
+### How is our setup different?
 * Dedicated DEV/UAT/PROD EC2 instances (actually deployment groups)
 * Only DEV is deployed on every commit, UAT and PROD require manual approval
 * DEV/UAT is managed by one admin user and PROD is managed by another admin user
@@ -139,14 +139,14 @@
 * DEV and UAT located in Ireland, PROD in N. Virginia (to be close to the exchange)
 * Additional steps for CodeBuild: test execution, static code analysis
 
-## What else do we use?
+### What else do we use?
 * S3: store (and even receive) exchange market data in .csv files
 * RDS: MySQL DB
 * Route 53: route requests from our registered domain to the load balancers
 * EC2 / Load Balancers: map port 80 requests to port 8090, distribute load (coming soon), make provision of new EC2 instances transparent (IP address changes but we refer to instance ID which remains the same)
 * Workspaces: Amazon Linux 2 instances because Cloud9 is not good enough (yet) for Java development
 
-## What is still coming?
+### What is still coming?
 * Athena: use compressed .csv data in S3 as DB (run SQL queries) without loading into a DB
 * SQS / SNS: Queue and topic based messaging middleware
 * Kinesis Data Firehose: streaming alternative for messaging and even much more by hooking analytics into the stream
