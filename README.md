@@ -144,7 +144,7 @@
 * Workspaces: Amazon Linux 2 instances because Cloud9 is not good enough (yet) for Java development
 
 ## What is still coming?
-* Athena: use .csv data in S3 as DB (run SQL queries) without loading into a DB
+* Athena: use compressed .csv data in S3 as DB (run SQL queries) without loading into a DB
 * SQS / SNS: Queue and topic based messaging middleware
 * Kinesis Data Firehose: streaming alternative for messaging and even much more to hook analytics into the stream
 * Glacier: low-cost data backup
