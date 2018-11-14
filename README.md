@@ -150,7 +150,6 @@
 * Glacier: low-cost data backup
 * CloudWatch: runtime monitoring
 * Systems Manager: Operational data
-...
 
 
 # References
