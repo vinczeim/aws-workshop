@@ -5,8 +5,9 @@
 ### Flovtec
 * [www.flovtec.com](https://www.flovtec.com)
 * Vision: asset manager company providing liquidity for digital assets
+* Operation: fully automated, high-frequency trading
 * Step 1: 
-  * assets: crytpo-currencies
+  * assets: crypto-currencies
   * market making: on crypto exchanges
 * Long term:
   * assets: any kind of digital assets, anything that got tokenized
