@@ -1,5 +1,7 @@
 # INTRO
 
+[Imre Vincze](https://www.linkedin.com/in/vinnie950) - head of IT @ [flov technologies AG](https://www.linkedin.com/company/flov-technologies) (Flovtec)
+
 ## Flovtec
 * https://www.flovtec.com
 * Vision: asset manager company providing liquidity for digital assets
