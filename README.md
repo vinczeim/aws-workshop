@@ -32,9 +32,9 @@
 * [Account creation guide](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account)
 * My account: flovtrain
 * Only one account is allowed per e-mail address: created aliases
-  * aws1@flovtec.com: used for account flovtrain, sandbox
-  * aws2@flovtec.com: used for account flovtrain2, clean state
-  * aws3@flovtec.com: not used yet
+  * flovtrain / aws1@flovtec.com: sandbox
+  * flovtrain2 / aws2@flovtec.com: created account but clean state
+  * flovtrain3 / aws3@flovtec.com: not created yet
 
 ## Regions and available services
 * Regions and availability zones (data centers)
