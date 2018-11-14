@@ -127,6 +127,28 @@
 
 
 # AWS - Flovtec setup
+
+## How is our setup different?
+* Dedicated DEV/UAT/PROD EC2 instances (actually deployment groups)
+* Only DEV is deployed on every commit, UAT and PROD require manual approval
+* DEV/UAT is managed by one admin user and PROD is managed by another admin user
+* Connection between DEV/UAT and PROD will be a shared S3 bucket (staging area) owned by the PROD account
+* Additional steps for CodeBuild: test execution, static code analysis
+
+## What else do we use?
+* S3: store (and even receive) exchange market data in .csv files
+* RDS: MySQL DB
+* Route 53: route requests from our registered domain to the load balancers
+* EC2 / Load Balancers: map port 80 requests to port 8090, distribute load (coming soon), make provision of new EC2 instances transparent (IP changes but we refer to instance ID that remains the same)
+* Workspaces: Amazon Linux 2 instances because Cloud9 is not good enough (yet) for Java development
+
+## What is still coming?
+* Athena: use .csv data in S3 as DB (run SQL queries) without loading into a DB
+* SQS / SNS: Queue and topic based messaging middleware
+* Kinesis Data Firehose: streaming alternative for messaging and even much more to hook analytics into the stream
+* Glacier: low-cost data backup
+* CloudWatch: runtime monitoring
+* Systems Manager: Operational data
 ...
 
 
