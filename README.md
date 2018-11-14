@@ -28,14 +28,14 @@
 # AWS - CodeStar / CodePipeline setup
 
 ## Create a new AWS account
-* AWS Console: https://aws.amazon.com
-* Account creation guide: https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account
+* [AWS Console](https://aws.amazon.com)
+* [Account creation guide](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account)
 * My account: flovtrain
 * Only one account is allowed per e-mail address: created aliases (aws1@flovtec.com *, aws2@flovtec.com, aws3@flovtec.com)
 
 ## Regions and available services
 * Regions and availability zones (data centers)
-* Region table: https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/
+* [Region table](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services)
 
 ## IAM: create users and groups with policies
 * IAM = Identity & Access Management: Users, Groups, Roles and Policies
