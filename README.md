@@ -140,7 +140,7 @@
 * S3: store (and even receive) exchange market data in .csv files
 * RDS: MySQL DB
 * Route 53: route requests from our registered domain to the load balancers
-* EC2 / Load Balancers: map port 80 requests to port 8090, distribute load (coming soon), make provision of new EC2 instances transparent (IP changes but we refer to instance ID that remains the same)
+* EC2 / Load Balancers: map port 80 requests to port 8090, distribute load (coming soon), make provision of new EC2 instances transparent (IP address changes but we refer to instance ID which remains the same)
 * Workspaces: Amazon Linux 2 instances because Cloud9 is not good enough (yet) for Java development
 
 ## What is still coming?
